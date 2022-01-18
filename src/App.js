@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+//components
+import Heading from "./components/Heading";
+import TouristInfoCards from "./components/TouristInfoCards/TouristInfoCards";
+import Footer from "./components/Footer";
+import Restaurant from "./components/Restaurant/Restaurant";
+
+
+import Bookings from "./Bookings";
+import "./App.css";
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Heading/>
+      <Bookings/>
+      <br/>
+      <br/>
+      <Restaurant/>
+      <br/>
+      <br/>
+      <footer 
+          footerArr ={[
+          "123 Fake Street, London, E1 4UD",
+          "hello@fakehotel.com",
+          "0123 456789"  
+          ]}
+          />
     </div>
   );
-}
+};
 
 export default App;
