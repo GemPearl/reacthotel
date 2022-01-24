@@ -20,7 +20,7 @@ const App = () => {
       <Restaurant/>
       <br/>
       <br/>
-      <footer 
+      <Footer 
           footerArr ={[
           "123 Fake Street, London, E1 4UD",
           "hello@fakehotel.com",
